@@ -46,31 +46,31 @@ interface InterviewCardProps {
   techstack: string[];
   createdAt?: string;
 }
-//
-// interface AgentProps {
-//   userName: string;
-//   userId?: string;
-//   interviewId?: string;
-//   feedbackId?: string;
-//   type: "generate" | "interview";
-//   questions?: string[];
-// }
-//
-// interface RouteParams {
-//   params: Promise<Record<string, string>>;
-//   searchParams: Promise<Record<string, string>>;
-// }
-//
-// interface GetFeedbackByInterviewIdParams {
-//   interviewId: string;
-//   userId: string;
-// }
-//
-// interface GetLatestInterviewsParams {
-//   userId: string;
-//   limit?: number;
-// }
-//
+
+interface AgentProps {
+  userName: string;
+  userId?: string;
+  interviewId?: string;
+  feedbackId?: string;
+  type: "generate" | "interview";
+  questions?: string[];
+}
+
+interface RouteParams {
+  params: Promise<Record<string, string>>;
+  searchParams: Promise<Record<string, string>>;
+}
+
+interface GetFeedbackByInterviewIdParams {
+  interviewId: string;
+  userId: string;
+}
+
+interface GetLatestInterviewsParams {
+  userId: string;
+  limit?: number;
+}
+
 interface SignInParams {
   email: string;
   idToken: string;
@@ -82,18 +82,18 @@ interface SignUpParams {
   email: string;
   password: string;
 }
-//
-// type FormType = "sign-in" | "sign-up";
-//
-// interface InterviewFormProps {
-//   interviewId: string;
-//   role: string;
-//   level: string;
-//   type: string;
-//   techstack: string[];
-//   amount: number;
-// }
-//
-// interface TechIconProps {
-//   techStack: string[];
-// }
+
+type FormType = "sign-in" | "sign-up";
+
+interface InterviewFormProps {
+  interviewId: string;
+  role: string;
+  level: string;
+  type: string;
+  techstack: string[];
+  amount: number;
+}
+
+interface TechIconProps {
+  techStack: string[];
+}
